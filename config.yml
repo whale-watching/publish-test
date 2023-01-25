@@ -1,20 +1,13 @@
 version: 1
 accounts:
 - name: alice
-  coins: 
-  - 200000000timpi
-  - 200000000000utimpi
+  coins: ['200000000timpi', '200000000000utimpi']
 - name: bob
-  coins: 
-  - "100000000timpi"
-  - "200000000000utimpi"
+  coins: ['100000000timpi', '200000000000utimpi']
 - name: tim
-  coins:
-  - "100000000timpi"
-  - "100000000000utimpi"
+  coins: ['100000000timpi', '100000000000utimpi']
 - name: jane
-  coins: 
-  - "100000000timpi"
+  coins: ['100000000timpi']
 validators:
 - name: alice
   bonded: "10000000000utimpi"
@@ -27,9 +20,7 @@ client:
     path: "vue/src/store"
 faucet:
   name: bob
-  coins: 
-  - 5timpi
-  - 100000000utimpi
+  coins: ["5timpi", "100000000utimpi"]
 genesis:
   chain_id: "timpitest"
   app_state:
