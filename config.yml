@@ -10,7 +10,7 @@ genesis:
     gov:
       deposit_params:
         min_deposit: [
-          denom: "utimpi"
+          denom: "utimpi",
           amount: "4000000000"]
         max_deposit_period: "172800000000ns"
       voting_params:
