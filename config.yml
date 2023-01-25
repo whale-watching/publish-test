@@ -9,27 +9,34 @@ genesis:
         mint_denom: "utimpi"
     gov:
       deposit_params:
-        min_deposit: [
-          denom: "utimpi",
-          amount: "4000000000"]
+        min_deposit: 
+        - denom: "utimpi"
+        - amount: "4000000000"
         max_deposit_period: "172800000000ns"
       voting_params:
         voting_period: "172800000000ns"
 chain_id: "timpitest"
 accounts:
-  - name: alice
-    coins: ["200000000timpi", "200000000000utimpi"]
-  - name: bob
-    coins: ["100000000timpi", "200000000000utimpi"]
-  - name: tim
-    coins: ["100000000timpi", "100000000000utimpi"]
-  - name: jane
-    coins: ["100000000timpi"]
-validator:
-  name: alice
-  staked: "10000000000utimpi"
-  name: tim
-  staked: "10000000000utimpi"
+- name: alice
+  coins: 
+  - 200000000timpi
+  - 200000000000utimpi
+- name: bob
+  coins: 
+  - "100000000timpi"
+  - "200000000000utimpi"
+- name: tim
+  coins:
+  - "100000000timpi"
+  - "100000000000utimpi"
+- name: jane
+  coins: 
+  - "100000000timpi"
+validators:
+- name: alice
+  bonded: "10000000000utimpi"
+- name: tim
+  bonded: "10000000000utimpi"
 client:
   openapi:
     path: "docs/static/openapi.yml"
@@ -37,4 +44,7 @@ client:
     path: "vue/src/store"
 faucet:
   name: bob
-  coins: ["5timpi", "100000000utimpi"]
+  coins: 
+  - 5timpi
+  - 100000000utimpi
+
