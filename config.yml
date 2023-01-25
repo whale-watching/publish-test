@@ -1,21 +1,4 @@
 version: 1
-genesis:
-  app_state:
-    staking:
-      params:
-        bond_denom: "utimpi"
-    mint:
-      params:
-        mint_denom: "utimpi"
-    gov:
-      deposit_params:
-        min_deposit: 
-        - denom: "utimpi"
-        - amount: "4000000000"
-        max_deposit_period: "172800000000ns"
-      voting_params:
-        voting_period: "172800000000ns"
-  chain_id: "timpitest"
 accounts:
 - name: alice
   coins: 
@@ -47,4 +30,21 @@ faucet:
   coins: 
   - 5timpi
   - 100000000utimpi
+genesis:
+  chain_id: "timpitest"
+  app_state:
+    staking:
+      params:
+        bond_denom: "utimpi"
+    mint:
+      params:
+        mint_denom: "utimpi"
+    gov:
+      deposit_params:
+        min_deposit: 
+        - denom: "utimpi"
+        - amount: "4000000000"
+        max_deposit_period: "172800000000ns"
+      voting_params:
+        voting_period: "172800000000ns"
 
