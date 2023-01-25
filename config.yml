@@ -15,7 +15,7 @@ genesis:
         max_deposit_period: "172800000000ns"
       voting_params:
         voting_period: "172800000000ns"
-chain_id: "timpitest"
+  chain_id: "timpitest"
 accounts:
 - name: alice
   coins: 
